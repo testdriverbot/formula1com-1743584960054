@@ -1,0 +1,47 @@
+version: 4.2.26
+session: 67ed019a25b0068b6539765c
+steps:
+  - prompt: Click on "Accept All" in the cookie policy dialog.
+    commands:
+      - command: hover-text
+        text: ACCEPT ALL
+        description: accept all button in the cookie policy dialog
+        action: click
+  - prompt: Assert that the cookie dialog disappears.
+    commands:
+      - command: assert
+        expect: the cookie dialog is not visible
+  - prompt: Refresh the page.
+    commands:
+      - command: press-keys
+        keys:
+          - control
+          - r
+  - prompt: Refresh the page.
+    commands:
+      - command: press-keys
+        keys:
+          - control
+          - r
+  - prompt: Refresh the page.
+    commands:
+      - command: press-keys
+        keys:
+          - control
+          - r
+  - prompt: Refresh the page.
+    commands:
+      - command: press-keys
+        keys:
+          - control
+          - r
+  - prompt: Refresh the page.
+    commands:
+      - command: press-keys
+        keys:
+          - control
+          - r
+  - prompt: Assert that the cookie dialog does not reappear.
+    commands:
+      - command: assert
+        expect: the cookie dialog is not visible
