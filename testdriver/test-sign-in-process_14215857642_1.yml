@@ -1,0 +1,11 @@
+version: 4.2.26
+session: 67ed018625b0068b65397655
+steps:
+  - prompt: Click on the "Sign In" button at the top of the page.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+      - command: hover-text
+        text: SIGN IN
+        description: sign in button at the top right of the page
+        action: click
